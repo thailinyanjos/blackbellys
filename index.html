@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackbellys - Gestão do Rebanho</title>
+    <!-- Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: {
+                            900: '#2C1810',
+                            800: '#3D2314',
+                            700: '#5C3A21',
+                            600: '#8C5830',
+                            200: '#EEDCBE',
+                            100: '#F4ECE1',
+                            50: '#FAF6F0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brown-50 text-brown-900 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- CABEÇALHO / NAVBAR -->
+    <header class="bg-brown-800 text-brown-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-bold tracking-wider">🐑 Blackbellys</span>
+            </div>
+            <nav class="space-x-6 text-sm font-medium">
+                <a href="#" class="hover:text-brown-200 transition">Início</a>
+                <a href="cadastro.html" class="bg-brown-600 px-4 py-2 rounded-lg hover:bg-brown-700 transition shadow">Ir para Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- CARROSSEL DE IMAGENS DE OVELHAS -->
+        <section class="max-w-5xl mx-auto px-4 mt-8">
+            <div class="relative bg-brown-200 rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 flex items-center justify-center">
+                <!-- Imagem de Exemplo (Substitua pelos links reais das ovelhas do rebanho) -->
+                <img src="https://images.unsplash.com/photo-1484557075176-a979205f23d0?auto=format&fit=crop&w=1200&q=80" alt="Ovelhas no pasto" class="absolute inset-0 w-full h-full object-cover opacity-90">
+                <div class="absolute inset-0 bg-gradient-to-t from-brown-900/70 via-transparent to-transparent"></div>
+                <div class="relative z-10 text-center text-white px-4">
+                    <h1 class="text-3xl md:text-5xl font-extrabold mb-2 drop-shadow-md">Gestão Inteligente do Rebanho</h1>
+                    <p class="text-brown-100 text-sm md:text-base max-w-xl mx-auto drop-shadow">Acompanhe seu plantel com precisão, controle e a identidade visual que você ama.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CARDS DO REBANHO -->
+        <section class="max-w-5xl mx-auto px-4 my-12">
+            <h2 class="text-2xl font-bold text-brown-800 mb-6 border-b-2 border-brown-200 pb-2">Visão Geral do Rebanho</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-brown-200 hover:shadow-lg transition">
+                    <div class="text-brown-600 text-3xl font-bold mb-2">124</div>
+                    <h3 class="text-lg font-semibold text-brown-800">Total de Ovelhas</h3>
+                    <p class="text-gray-600 text-sm mt-1">Matrizes, reprodutores e cordeiros ativos no sistema.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-brown-200 hover:shadow-lg transition">
+                    <div class="text-brown-600 text-3xl font-bold mb-2">12</div>
+                    <h3 class="text-lg font-semibold text-brown-800">Nascimentos (Mês)</h3>
+                    <p class="text-gray-600 text-sm mt-1">Acompanhamento de novos cordeiros desmamados.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border border-brown-200 hover:shadow-lg transition">
+                    <div class="text-brown-600 text-3xl font-bold mb-2">Acesso Rápido</div>
+                    <h3 class="text-lg font-semibold text-brown-800">Novo Cadastro</h3>
+                    <p class="text-gray-600 text-sm mt-1">Registre novos animais rapidamente na base de dados.</p>
+                    <a href="cadastro.html" class="inline-block mt-4 text-sm bg-brown-800 text-white px-4 py-2 rounded-lg hover:bg-brown-700 transition">Cadastrar Agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-brown-900 text-brown-200 text-center py-6 mt-12 text-sm">
+        <p>&copy; 2026 Blackbellys - Sistema de Controle de Rebanho. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
